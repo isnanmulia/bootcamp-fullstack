@@ -1,5 +1,28 @@
-body { margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, sans-serif; }
-#main { width: 1000px; margin: 0 auto; border: solid black 1px; height: 500px; }
-nav { background-color: black; padding: 5px; }
-nav li { display: inline; padding: 0 10px; }
-nav li a { color: white; text-decoration: none; }
+body { margin: 0; padding: 0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+#main { margin: 60px auto; max-width: 1000px; }
+.content { padding: 10px; border-top: 1px solid #666; }
+.content h2 { margin-top: 5px; }
+
+.anchor { display: block; padding-top: 40px; margin-top: -40px; }
+
+#navbar { background-color: #666; text-align: center; vertical-align: middle; position: fixed; top: 0; width: 100%; }
+#navbar a { color: white; text-decoration: none; padding: 10px 20px; display: inline-block; }
+#navbar a:hover { text-decoration: underline; }
+
+#banner { text-align: center; margin: 5px; }
+#banner img { width: 100%; max-width: 600px; }
+
+#welcome p { column-count: 3; column-width: 250px; column-fill: balance; column-gap: 50px; }
+
+#lowongan { display: flex; flex-direction: row;}
+.item-lowongan { margin: 5px; padding: 10px; border: gray 2px dashed; border-radius: 10px; }
+
+#table-kontak td { vertical-align: top; }
+.input { width: 100%; border: 2px dotted gray; border-radius: 5px; }
+.btn { padding: 5px 20px; }
+
+#footer { background-color: #666; padding: 10px; justify-content: center; display: flex; flex-direction: row;  }
+.item-footer { color: white; padding: 10px 30px; font-size: 14pt; }
+.item-footer a { text-decoration: none; color: white; }
+

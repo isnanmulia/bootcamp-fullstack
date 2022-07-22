@@ -5,20 +5,120 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Beranda :: PT AlifBaTa</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <a id="top"></a>
+        <div id="navbar">
+            <a href="#"><img src="../img/alifbata_white.png" style="height: 20px"></a>
+            <a href="#">Beranda</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#karir">Karir</a>
+            <a href="#kontak">Hubungi Kami</a>
+        </div>
         <div id="main">
-            <nav>
-                <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#portofolio">Portofolio</a></li>
-                    <li><a href="#karir">Karir</a></li>
-                    <li><a href="#kontak">Hubungi Kami</a></li>
-                    <li><a href="about.html">Tentang</a></li>
-                </ul>
-            </nav>
+            <div id="banner">
+                <img src="../img/emile-perron-xrVDYZRGdw4-unsplash.jpg" title="https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" alt="Ini Banner">
+            </div>
+            <div id="welcome" class="content">
+                <h2>Selamat datang di website PT AlifBaTa</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor urna, blandit sed dui ut, tristique pulvinar orci. Etiam placerat magna sit amet ultricies lobortis. Quisque volutpat ornare lectus, a malesuada libero. Nunc enim magna, eleifend id nulla ut, fringilla vehicula ante. Aenean nec lacinia tortor, sed lobortis sapien. Sed maximus venenatis lacus, nec egestas eros gravida nec. Aliquam egestas odio eget est vestibulum, a viverra lacus volutpat. Vivamus at consectetur lacus, imperdiet venenatis odio. Ut rhoncus risus nec ipsum feugiat, quis ornare sapien interdum. Vestibulum sit amet est ut libero ultrices accumsan vulputate ut dolor. Fusce consequat porta quam vel tristique. Donec turpis metus, rutrum sit amet risus vitae, pulvinar blandit sapien. Aliquam erat volutpat. Nam sit amet efficitur augue. Proin a risus augue. Integer facilisis finibus porttitor.
+                </p>
+            </div>
+            <a id="portofolio" class="anchor"></a>
+            <div id="portofolio" class="content">
+                <h2>Portofolio</h2>
+                <p>
+                    Kami adalah sebuah perusahaan yang bergerak di bidang <em>software engineering</em>, dan menawarkan solusi digital untuk bisnis Anda. Beberapa aplikasi yang kami kembangkan adalah sebagai berikut.<br>
+                    <ul>
+                        <li>Aplikasi antrian poliklinik RS</li>
+                        <li>Aplikasi antrian puskesmas</li>
+                        <li>Aplikasi toko <em>online</em></li>
+                    </ul>
+                </p>
+            </div>
+            <a id="karir" class="anchor"></a>
+            <div id="karir" class="content">
+                <h2>Lowongan Pekerjaan</h2>
+                <p>
+                    Kami membuka lowongan bagi Anda yang memiliki semangat untuk berkarya di bidang <em>software engineering</em>. Jika Anda memiliki kualifikasi berikut, silakan kirimkan lamaran Anda ke alamat email <strong>hrd@alifbata.com</strong>. Hanya pelamar terpilih yang akan kami hubungi untuk diproses lebih lanjut.
+                </p>
+                <div id="lowongan">
+                    <div class="item-lowongan">
+                        <strong>Frontend Developer</strong>
+                        <ol>
+                            <li>Pria/Wanita</li>
+                            <li>Usia maksimal 30 tahun</li>
+                            <li>Pengalaman minimal 1 tahun pada bidang <em>frontend development</em></li>
+                            <li><em>Fresh graduate</em> dipersilakan untuk mendaftar</em></li>
+                            <li>Menguasai JavaScript, baik <em>native</em> maupun Jquery</li>
+                            <li>Menguasai ReactJS menjadi nlai plus</li>
+                        </ol>
+                    </div>
+                    <div class="item-lowongan">
+                        <strong>Backend Developer</strong>
+                        <ol>
+                            <li>Pria/Wanita</li>
+                            <li>Usia maksimal 30 tahun</li>
+                            <li>Pengalaman minimal 1 tahun pada bidang <em>backend development</em></li>
+                            <li><em>Fresh graduate</em> dipersilakan untuk mendaftar</em></li>
+                            <li>Menguasai PHP, baik <em>native</em> maupun <em>framework</em> Laravel</li>
+                        </ol>
+                    </div>
+                    <div class="item-lowongan">
+                        <strong>QA Engineer</strong>
+                        <ol>
+                            <li>Pria/Wanita</li>
+                            <li>Usia maksimal 30 tahun</li>
+                            <li>Pengalaman minimal 1 tahun pada bidang <em>quality assurance</em></li>
+                            <li><em>Fresh graduate</em> dipersilakan untuk mendaftar</em></li>
+                            <li>Menguasai <em>tools</em> untuk <em>automated testing</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <a id="kontak" class="anchor"></a>
+            <div id="kontak" class="content">
+                <h2>Hubungi Kami</h2>
+                <p>Memiliki pertanyaan mengenai kami? Atau ada yang ingin disampaikan kepada kami? Silakan tinggalkan pesan bagi kami.</p>
+                <form action="" method="POST">
+                    <table id="table-kontak" style="margin: 0 auto">
+                        <tr>
+                            <td style="width: 100px">Nama</td><td>:</td><td style="width: 300px"><input type="text" id="nama" name="nama" class="input"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td><td>:</td><td><input type="text" id="email" name="email" class="input"></td>
+                        </tr>
+                        <tr>
+                            <td>Kategori</td><td>:</td><td>
+                                <select id="kategori" name="kategori" class="input">
+                                    <option value="-">Pilih kategori</option>
+                                    <option value="testimoni">Testimoni</option>
+                                    <option value="pertanyaan">Pertanyaan</option>
+                                    <option value="keluhan">Keluhan</option>
+                                    <option value="penawaran">Penawaran</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pesan</td><td>:</td><td>
+                                <textarea id="pesan" class="input" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr><td colspan="3" style="text-align: right"><button type="button" class="btn">Kirim</button></td></tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="item-footer"><a href="https://maps.google.com" target="_blank" title="Lokasi kami"><i class="bi bi-geo-alt"></i></a></div>
+            <div class="item-footer"><a href="https://whatsapp.com" target="_blank" title="Kontak kami via WhatsApp"><i class="bi bi-whatsapp"></i></a></div>
+            <div class="item-footer"><a href="https://instagram.com" target="_blank" title="Instagram kami"><i class="bi bi-instagram"></i></a></div>
+            <div class="item-footer"><a href="https://youtube.com" target="_blank" title="Channel YouTube kami"><i class="bi bi-youtube"></i></a></div>
+            <div class="item-footer"><a href="https://gmail.com" target="_blank" title="Kontak kami via email"><i class="bi bi-envelope"></i></a></div>
+            <div class="item-footer"><a href="#" target="_blank" title="Telepon kami"><i class="bi bi-telephone-fill"></i></a></div>
         </div>
     </body>
 </html>
