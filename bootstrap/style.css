@@ -1,0 +1,10 @@
+body { min-width: 350px; }
+
+#div-mainphoto { padding-top: 5rem !important; }
+#img-main { width: 200px; }
+.nav-icon { padding: 0 5px 0 10px; }
+#portofolio { border: 1px solid 1px solid rgba(0,0,0,.125); border-radius: .25rem; }
+.anchor { display: block; padding-top: 60px; margin-top: -60px; }
+
+#contactme { font-family: 'DejaVu Sans Mono', monospace; }
+.contactme-icon { background-color: lightgray; }
